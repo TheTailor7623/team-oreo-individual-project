@@ -1,0 +1,64 @@
+// Primary colour
+$primary: #fe608a;
+
+// Grey colour
+$grey: #b5a9ac;
+
+// Tints
+$primary-tint1: #ff7c9f;
+$primary-tint2: #ff96b2;
+$primary-tint3: #fdbbcd;
+$primary-tint4: #ffd7e2;
+$primary-tint5: #ffe6ed;
+$primary-tint6: #fff0f4;
+
+// Shades
+$primary-shade1: #d25173;
+$primary-shade2: #ab415e;
+$primary-shade3: #7e3145;
+$primary-shade4: #53202e;
+$primary-shade5: #33131b;
+$primary-shade6: #190a0e;
+
+// Grey tints
+$grey-tint1: #f4f1f2;
+$grey-tint2: #e8e3e4;
+$grey-tint3: #d6cdcf;
+$grey-tint4: #c5b9bb;
+
+// Grey shades
+$grey-shade1: hsl(350, 5%, 65%);
+$grey-shade2: hsl(350, 5%, 55%);
+
+// Red accents
+$red1: #fe3434;
+$red2: #fe6767;
+$red3: #fe9a9a;
+
+// Green accents
+$green1: #0ca678;
+$green2: #20c997;
+$green3: #63e6be;
+
+// Blue accents
+$blue1: #5634fe;
+$blue2: #8067fe;
+$blue3: #aa9afe;
+
+// Purple accents
+$purple1: #bb34fe;
+$purple2: #cc67fe;
+$purple3: #dd9afe;
+
+// ART FOR HERO
+$analogous1: rgb(98, 254, 212);
+$analogous2: rgb(182, 99, 255);
+$analogous3: rgb(255, 138, 99);
+$analogous4: rgb(255, 245, 99);
+$analogous5: rgb(255, 99, 221);
+
+$circleSize: 80%;
+// $blending: hard-light;
+// $blending: multiply;
+// $blending: soft-light;
+$blending: color-burn;

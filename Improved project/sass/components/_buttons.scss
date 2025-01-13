@@ -1,0 +1,225 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  z-index: 0;
+
+  @include respond(port-tab) {
+    padding: 2rem 3rem;
+  }
+}
+
+.btn {
+  &.btn--cta {
+    border-radius: 4px;
+    color: $primary-shade6;
+    box-shadow: 0 0 4px 4px inset $primary;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 190%;
+      width: 100%;
+      background-color: $primary;
+      transform: translate(0, -100%);
+      border-radius: 0 0 50% 50%;
+      z-index: -1;
+      transition: transform ease 0.3s;
+    }
+
+    &:hover {
+      color: $primary-tint6;
+
+      &::before {
+        transform: translate(0, 0%);
+      }
+    }
+
+    &.btn--cta--large {
+      padding: 2.4rem 4.8rem;
+      font-size: 2.4rem;
+    }
+  }
+
+  &.btn--outline {
+    color: $primary-tint6;
+    border-radius: 4px;
+    background-color: $grey-shade2;
+    font-weight: 500;
+    transition: box-shadow ease 0.3s, background-color ease 0.3s,
+      color ease 0.3s;
+  }
+  &.btn--outline:hover {
+    box-shadow: 0 0 4px 4px inset $grey-tint3;
+    background-color: $primary-tint6;
+    color: $primary-shade6;
+  }
+
+  &.btn--link {
+    position: relative;
+    padding: 1.2rem;
+    color: $primary-tint6;
+    border-bottom: 2px solid $grey-tint4;
+    border-radius: 4px;
+    transition: all ease 0.3s;
+    overflow: hidden;
+
+    &:hover {
+      color: $primary-shade6;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      // background-color: $grey-shade2;
+      background-color: $primary-tint6;
+      z-index: -1;
+      border-bottom: 2px solid $grey-tint4;
+      border-radius: 4px;
+      transform: translate(0%, 100%);
+      transition: all ease 0.3s;
+    }
+
+    &:hover::before {
+      transform: translate(0%, 0%);
+    }
+  }
+
+  &.btn--submit {
+    position: relative;
+    padding: 3rem 6rem;
+    font-size: 2.4rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 8px;
+    background-color: $primary-tint6;
+    color: $primary-shade6;
+    width: 100%;
+    overflow: hidden;
+
+    .dark-background {
+      position: absolute;
+      top: 0;
+      left: 0%;
+      width: 25%;
+      height: 100%;
+      background-color: $primary-shade6;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: width ease 0.3s 0.1s, transform ease 0.3s 0.9s;
+    }
+
+    .btn--submit__folder {
+      position: absolute;
+      height: 4rem;
+      width: 4rem;
+      color: $primary-tint6;
+    }
+
+    .btn--submit__plane--1 {
+      position: absolute;
+      top: 35%;
+      left: 59%;
+      transform: rotate(45deg);
+      height: 3rem;
+      width: 3rem;
+      color: $primary-shade6;
+      transition: all ease 0.3s;
+    }
+
+    .btn--submit__hoverbg {
+      position: absolute;
+      content: "";
+      top: 101%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      background-color: $primary-tint6;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all ease 0.3s 0.75s;
+    }
+
+    .btn--submit__plane.plane--2 {
+      transform: rotate(-45deg);
+      height: 4.5rem;
+      width: 4.5rem;
+      color: $green1;
+      transition: all ease 0.3s;
+    }
+
+    .btn--submit__clickbg {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to right bottom, $green1, $green3);
+      border-radius: 100% 100% 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all ease 0.3s 0.2s;
+
+      .success-text {
+        color: $primary-tint6;
+      }
+
+      &.moveUp {
+        top: 0%;
+        border-radius: 0;
+      }
+    }
+
+    &:hover .btn--submit__plane--1 {
+      top: 150%;
+    }
+
+    &:hover .dark-background {
+      width: 101%;
+    }
+
+    &:hover .btn--submit__hoverbg {
+      top: 0%;
+    }
+  }
+  // &.btn--submit::before {
+  //   position: absolute;
+  //   content: "";
+  //   top: 101%;
+  //   left: 0%;
+  //   height: 100%;
+  //   width: 100%;
+  //   background-color: $primary-tint6;
+  //   border-radius: 8px;
+  //   transition: all ease 0.5s 0.9s;
+  // }
+}
+.page-navigation__item {
+  .btn--link {
+    color: $primary-shade6;
+
+    &:hover {
+      color: $primary-tint6;
+    }
+
+    &::before {
+      background-color: $grey-shade2;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.disappear {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.hidden {
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, 50%);
+}
+
+.hidden-overlay {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.hide-nav {
+  transform: translate(93%, 0%);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--2rows {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid--3rows {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid--4rows {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid--5rows {
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.margin-right-small {
+  margin: 0 1.4rem 0 0;
+}
+
+.margin-right-medium {
+  margin: 0 2.8rem 0 0;
+}
+
+.margin-right-large {
+  margin: 0 4.8rem 0 0;
+}

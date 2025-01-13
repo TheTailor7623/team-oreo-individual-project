@@ -1,0 +1,46 @@
+// MEDIA QUERIES MANAGER
+/*
+LARGE DESKTOPS: 1800px +
+DESKTOPS: >= 1500px
+LANDSCAPE TABLETS: >= 1300px
+PORTRAIT TABLETS: >= 1000px
+LARGE MOBILES: >= 700px
+SMALL MOBILES: >= 450px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == large-desk {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desk {
+    @media (max-width: 93.75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == land-tab {
+    @media (max-width: 81.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == port-tab {
+    @media (max-width: 62.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == large-mob {
+    @media (max-width: 43.75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mob {
+    @media (max-width: 28.125em) {
+      @content;
+    }
+  }
+}

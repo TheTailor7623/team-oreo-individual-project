@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  @include respond(land-tab) {
+    font-size: 56.25%;
+  }
+  @include respond(port-tab) {
+    font-size: 43.82%;
+  }
+  @include respond(large-mob) {
+    font-size: 37.5%;
+  }
+}
+
+body {
+  font-family: Space-Grotesque;
+}

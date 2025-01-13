@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abous Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="overlay hidden-overlay"></div>
+    <!-- HEADER -->
+    <header class="header sticky">
+      <img
+        src="src/logo.png"
+        alt="Logo of the company which is an infinity sign with oreo text next to it"
+        class="logo logo--navigation"
+      />
+      <nav class="desktop-navigation">
+        <li><a class="btn btn--outline" href="#hero">About us</a></li>
+        <li><a class="btn btn--outline" href="#">Services</a></li>
+        <li><a class="btn btn--outline" href="#">Our work</a></li>
+        <li>
+          <a class="btn btn--cta" href="#cta">Estimate project &darr;</a>
+        </li>
+      </nav>
+      <div class="mobile-navigation">
+        <input
+          type="checkbox"
+          class="mobile-navigation__checkbox"
+          id="navigation-toggle"
+        />
+        <label for="navigation-toggle" class="mobile-navigation__button">
+          <div class="mobile-navigation__icon">
+            <span class="icon icon--1">&nbsp;</span>
+            <span class="icon icon--2">&nbsp;</span>
+            <span class="icon icon--3">&nbsp;</span>
+          </div>
+        </label>
+        <div class="mobile-navigation__background">&nbsp;</div>
+        <div class="mobile-navigation__nav">
+          <ul class="mobile-navigation__list">
+            <li class="mobile-navigation__item">
+              <a href="#" class="btn btn--outline">About us</a>
+            </li>
+            <li class="mobile-navigation__item">
+              <a href="#" class="btn btn--outline">Services</a>
+            </li>
+            <li class="mobile-navigation__item">
+              <a href="#" class="btn btn--outline">Our work</a>
+            </li>
+            <li class="mobile-navigation__item">
+              <a href="#" class="btn btn--cta">Estimate project</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- PAGE NAVIGATION -->
+      <div class="page-navigation hide-nav">
+        <div class="page-navigation__container">
+          <ul class="page-navigation__list">
+            <li class="page-navigation__item">
+              <a href="#data" class="btn btn--link">Our milestones</a>
+            </li>
+            <li class="page-navigation__item">
+              <a href="#timeline" class="btn btn--link">Our history</a>
+            </li>
+            <li class="page-navigation__item">
+              <a href="#vision" class="btn btn--link">Our vision</a>
+            </li>
+            <li class="page-navigation__item">
+              <a href="#team" class="btn btn--link">Our team</a>
+            </li>
+            <li class="page-navigation__item">
+              <a href="#values" class="btn btn--link">Our values</a>
+            </li>
+            <li class="page-navigation__item">
+              <a href="#cta" class="btn btn--cta">Estimate project</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-navigation__button">
+          <div class="arrow"></div>
+        </div>
+      </div>
+      <!-- HERO -->
+      <section class="section-hero" id="hero">
+        <!--  -->
+        <div class="gradient-bg">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="10"
+                  result="blur"
+                />
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                  result="goo"
+                />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+            </defs>
+          </svg>
+          <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="section-hero__container">
+          <div class="section-hero__content">
+            <div class="hero__text">
+              <h1 class="hero__title heading heading--primary">About us</h1>
+              <p class="hero__description paragraph paragraph--primary">
+                High quality software design and development
+              </p>
+            </div>
+            <div class="hero__buttons">
+              <a class="btn btn--cta" href="#cta"
+                >Estimate your project &darr;</a
+              >
+              <a class="btn btn--outline" href="#data">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- DATA -->
+      <section class="section-data" id="data">
+        <div
+          class="section-data__container container grid grid--5cols grid--3rows"
+        >
+          <div class="data__item data__item--1">
+            <span class="data__number">100+</span>
+            <h2 class="data__title paragraph--secondary">Projects</h2>
+          </div>
+          <div class="data__item data__item--2">
+            <span class="data__number">50+</span>
+            <h2 class="data__title paragraph--secondary">Internships</h2>
+          </div>
+          <div class="data__item data__item--3">
+            <span class="data__number">87%</span>
+            <h2 class="data__title paragraph--secondary">
+              Customer satisfaction
+            </h2>
+          </div>
+          <div class="data__item data__item--4">
+            <span class="data__number">52+</span>
+            <h2 class="data__title paragraph--secondary">Great clients</h2>
+          </div>
+          <div class="data__item data__item--5">
+            <span class="data__number">100K+</span>
+            <h2 class="data__title paragraph--secondary">Total revenue</h2>
+          </div>
+          <div class="data__item data__item--6">
+            <span class="data__number">6+</span>
+            <h2 class="data__title paragraph--secondary">
+              Community based projects
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!-- TIMELINE -->
+      <section class="section-timeline" id="timeline">
+        <div class="section-timeline__container container">
+          <div class="section-header">
+            <p class="section-subtitle subheading">Our history</p>
+            <h2 class="section-title heading--secondary">
+              Timeline and history
+            </h2>
+          </div>
+          <div class="cards__container container grid grid--2cols grid--2rows">
+            <div class="card card--1 card--black">
+              <img
+                class="card__img"
+                src="src/Founded.svg"
+                alt="This is an image representing founding or building a company block by block"
+              />
+              <p class="card__description paragraph--primary">
+                Team Oreo was founded in 2018 by tech enthusiasts to provide
+                <span class="highlighted-text">innovative</span> IT solutions to
+                businesses
+              </p>
+            </div>
+            <div class="card card--2 card--black">
+              <img
+                class="card__img"
+                src="src/Expertise.svg"
+                alt="This is an image representing competence and expertise"
+              />
+              <p class="card__description paragraph--primary">
+                Team Oreo gained recognition for its
+                <span class="highlighted-text">expertise</span> in software
+                development and IT consulting
+              </p>
+            </div>
+            <div class="card card--3 card--black">
+              <img
+                class="card__img"
+                src="src/Trusted.svg"
+                alt="This is an image representing trust by others within a field"
+              />
+              <p class="card__description paragraph--primary">
+                Team Oreo expanded its client base and became a
+                <span class="highlighted-text">trusted</span> name in the
+                industry
+              </p>
+            </div>
+            <div class="card card--4 card--black">
+              <img
+                class="card__img"
+                src="src/Talent.svg"
+                alt="This is an image representing a talented team behind the company"
+              />
+              <p class="card__description paragraph--primary">
+                Team Oreo is known for its
+                <span class="highlighted-text">talented</span> workforce,
+                cutting-edge technologies, and commitment to client satisfaction
+              </p>
+            </div>
+          </div>
+          <div class="cta-ribbon">
+            <a class="btn btn--cta btn--cta--large" href="#cta"
+              >Estimate project &dArr;</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- VISION -->
+      <section class="section-vision" id="vision">
+        <div class="section-vision__container container">
+          <div class="section-header">
+            <p class="section-subtitle subheading">Our vision</p>
+            <h2 class="section-title heading--secondary">Mission and vision</h2>
+          </div>
+          <div class="box-container">
+            <div class="box box--black--full box--1">
+              <p class="box__description paragraph--primary">
+                <span class="highlighted-text">Expertise and Experience</span
+                ><br />
+                Team Oreo has a wealth of experience in the IT consulting
+                industry, with a team of seasoned professionals who are experts
+                in various domains such as cybersecurity, cloud computing,
+                software development, and IT infrastructure. Our extensive
+                knowledge ensures that we can handle complex IT challenges
+                efficiently
+              </p>
+              <a
+                class="btn btn--outline box-button show-modal show-modal--1"
+                href="#"
+                >Learn more</a
+              >
+              <div class="blurred-item"></div>
+            </div>
+            <div class="box box--black--full box--2">
+              <p class="box__description paragraph--primary">
+                <span class="highlighted-text">Customized Solutions</span
+                ><br />We focus on understanding the unique needs of each client
+                and provide tailored solutions that align with the specific
+                business goals and challenges. This personalized approach
+                ensures that the IT strategies and implementations are effective
+                and relevant
+              </p>
+              <a
+                class="btn btn--outline box-button show-modal show-modal--2"
+                href="#"
+                >Learn more</a
+              >
+              <div class="blurred-item"></div>
+            </div>
+            <div class="box box--black--full box--3">
+              <p class="box__description paragraph--primary">
+                <span class="highlighted-text">Innovative Technology</span
+                ><br />
+                Stays at the forefront of technological advancements,
+                integrating the latest innovations into our solutions. Our
+                commitment to innovation helps clients stay competitive and
+                leverage cutting-edge technologies to improve operations and
+                drive growth
+              </p>
+              <a
+                class="btn btn--outline box-button show-modal show-modal--3"
+                href="#"
+                >Learn more</a
+              >
+              <div class="blurred-item"></div>
+            </div>
+            <div class="box box--black--full box--4">
+              <p class="box__description paragraph--primary">
+                <span class="highlighted-text">Comprehensive Services</span
+                ><br />We offer a wide range of services, from IT strategy
+                consulting and digital transformation to managed IT services and
+                support, We can be a one-stop shop for all IT needs. This
+                comprehensive service offer to ensure seamless integration and
+                coordination across various IT functions.
+              </p>
+              <a
+                class="btn btn--outline box-button show-modal show-modal--4"
+                href="#"
+                >Learn more</a
+              >
+              <div class="blurred-item"></div>
+            </div>
+            <div class="box box--black--full box--5">
+              <p class="box__description paragraph--primary">
+                <span class="highlighted-text">Proven Track Record</span
+                ><br />With a history of successful projects and satisfied
+                clients, We have demonstrated our ability to deliver results.
+                Case studies and testimonials can showcase our capability to
+                solve real-world problems and provide tangible benefits to our
+                clients.
+              </p>
+              <a
+                class="btn btn--outline box-button show-modal show-modal--5"
+                href="#"
+                >Learn more</a
+              >
+              <div class="blurred-item"></div>
+            </div>
+            <div class="box box--black--full box--6">
+              <p class="box__description paragraph--primary">
+                <span class="highlighted-text">Client-Centric</span
+                ><br />Approach We prioritize client satisfaction, maintaining
+                open communication and transparency throughout the project
+                lifecycle. Our commitment to building long-term relationships
+                and providing ongoing support ensures that clients feel valued
+                and supported
+              </p>
+              <a
+                class="btn btn--outline box-button show-modal show-modal--6"
+                href="#"
+                >Learn more</a
+              >
+              <div class="blurred-item"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TEAM -->
+      <section class="section-team" id="team">
+        <div class="section-team__container container">
+          <div class="section-header">
+            <p class="section-subtitle subheading">Our team</p>
+            <h2 class="section-title heading--secondary">Meet our team</h2>
+          </div>
+          <div class="team__container container grid grid--2cols">
+            <div class="team-member card card--black">
+              <img class="team-member__img" src="src/hero.jpg" alt="" />
+              <p class="subheading">Mohammed Hadi</p>
+              <h2 class="heading--secondary">Director</h2>
+              <h3 class="heading--tertiary">
+                <span class="focus-word" data-text="2020 award"
+                  >2020 award</span
+                >
+                Alumni entrepreneur of the year
+              </h3>
+              <h3 class="heading--tertiary">
+                <span class="focus-word" data-text="2022 award"
+                  >2022 award</span
+                >
+                Newham civic award youth excellence
+              </h3>
+            </div>
+            <div class="team-member card card--black">
+              <img class="team-member__img" src="src/hero.jpg" alt="" />
+              <p class="subheading">Dhara Parekh</p>
+              <h2 class="heading--secondary">Managing director</h2>
+              <h3 class="heading--tertiary">
+                <span class="focus-word" data-text="Lecturer">Lecturer</span> in
+                Computer Science and Digital Technologies
+              </h3>
+              <h3 class="heading--tertiary">
+                <span class="focus-word" data-text="Data Analyst"
+                  >Data Analyst</span
+                >
+                / Power BI Developer
+              </h3>
+            </div>
+          </div>
+          <div class="cta-ribbon">
+            <a class="btn btn--cta btn--cta--large" href="#cta"
+              >Estimate project &dArr;</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- VALUES -->
+      <section class="section-values" id="values">
+        <div class="section-values__container container">
+          <div class="section-header">
+            <p class="section-subtitle subheading">Our values</p>
+            <h2 class="section-title heading--secondary">Company values</h2>
+          </div>
+          <div class="triangle__container">
+            <div class="triangle"></div>
+          </div>
+          <div class="values__container container">
+            <div class="box box--black--outline box--1">
+              <p class="paragraph--primary">
+                <span class="letters">Professionalism</span>
+              </p>
+            </div>
+            <div class="box box--black--outline box--2">
+              <p class="paragraph--primary">
+                <span class="letters">Dedication</span>
+              </p>
+            </div>
+            <div class="box box--black--outline box--3">
+              <p class="paragraph--primary">
+                <span class="letters">Dependability</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA -->
+      <section class="section-cta" id="cta">
+        <div class="section-cta__container container">
+          <div class="section-header">
+            <p class="section-subtitle subheading">Find out more</p>
+            <h2 class="section-title heading--secondary">
+              Estimate your project
+            </h2>
+          </div>
+          <form class="form" netlify>
+            <div class="form__page">
+              <div class="form__header">
+                <h2 class="form__title heading--secondary">More information</h2>
+                <p class="form__description paragraph--secondary">
+                  You can get an ESTIMATE for your project instantaneously by
+                  providing us with some details...
+                </p>
+              </div>
+              <div class="form__main-section">
+                <div class="form__content">
+                  <div class="form__section field--1">
+                    <label class="form__label" for="name-field">Name</label>
+                    <input
+                      class="form__field"
+                      id="name-field"
+                      type="text"
+                      name="firstname"
+                      placeholder="Your firstname"
+                    />
+                  </div>
+                  <div class="form__section field--2">
+                    <label class="form__label" for="email-field">Email</label>
+                    <input
+                      class="form__field"
+                      id="email-field"
+                      type="email"
+                      name="email"
+                      placeholder="me@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="form__section field--3">
+                    <label class="form__label" for="phone-field"
+                      >Phone number</label
+                    >
+                    <input
+                      class="form__field"
+                      id="phone-field"
+                      type="tel"
+                      name="phone-number"
+                      placeholder="07xxxxxxxxx"
+                      pattern="^07\d{9}$"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="cta-ribbon">
+                <button type="Submit" class="btn btn--submit">
+                  Submit
+                  <div class="dark-background">
+                    <ion-icon
+                      class="btn--submit__folder"
+                      name="folder-open"
+                    ></ion-icon>
+                  </div>
+                  <ion-icon
+                    class="btn--submit__plane--1"
+                    name="paper-plane"
+                  ></ion-icon>
+                  <div class="btn--submit__hoverbg">
+                    <ion-icon
+                      class="btn--submit__plane plane--2"
+                      name="paper-plane"
+                    ></ion-icon>
+                  </div>
+                  <div class="btn--submit__clickbg">
+                    <h2 class="success-text">Submitted!</h2>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="cta-ribbon newsletter">
+            <p class="paragraph--primary">Subscribe to our newsletter &rarr;</p>
+            <a class="btn btn--outline show-modal show-modal--7" href="#"
+              >Subscribe</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="section-footer">
+        <div class="section-footer__container">
+          <div class="footer__content">
+            <img
+              src="src/logo.png"
+              alt="Logo of the company which is an infinity sign with oreo text next to it"
+              class="logo logo--footer"
+            />
+            <div class="page-links">
+              <h2 class="links-header">Team oreo</h2>
+              <nav class="footer-nav nav--links">
+                <a class="btn btn--link" href="#">About us</a>
+                <a class="btn btn--link" href="#">Services</a>
+                <a class="btn btn--link" href="#">Our work</a>
+              </nav>
+            </div>
+            <div class="social-links">
+              <h2 class="social-header">Socials</h2>
+              <nav class="footer-nav nav--social">
+                <a class="btn btn--link" href="#">LinkedIn</a>
+                <a class="btn btn--link" href="#">Instagram</a>
+                <a class="btn btn--link" href="#">Snapchat</a>
+                <a class="btn btn--link" href="#">Facebook</a>
+                <a class="btn btn--link" href="#">Skype</a>
+                <a class="btn btn--link" href="#">Trust pilot</a>
+              </nav>
+            </div>
+            <div class="cookie-links">
+              <h2 class="cookie-header">Cookies</h2>
+              <nav class="footer-nav nav--cookie">
+                <a class="btn btn--link" href="#">Road to learn</a>
+              </nav>
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <h2 class="footer__contact__title">Contact Us</h2>
+            <p class="footer__contact__description">
+              Royal Victoria Dock <br />
+              Western Gateway <br />
+              London E16 <br />
+              07555 450793 (WhatsApp) <br />
+              contact@teamoreo.co.uk
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- MODAL WINDOWS -->
+      <div class="modal-window modal-window--1 hidden">
+        <div class="modal-window__close-button close-button--1">
+          <span class="close-button__line line--1">&nbsp;</span>
+          <span class="close-button__line line--2">&nbsp;</span>
+        </div>
+        <div class="modal-window__content">
+          <h1 class="modal-window__title heading--secondary highlighted-text">
+            Expertise and Experience
+          </h1>
+          <p class="modal-window__description paragraph--secondary">
+            Team Oreo has a wealth of experience in the IT consulting industry,
+            with a team of seasoned professionals who are experts in various
+            domains such as cybersecurity, cloud computing, software
+            development, and IT infrastructure. Our extensive knowledge ensures
+            that we can handle complex IT challenges efficiently
+          </p>
+        </div>
+      </div>
+      <div class="modal-window modal-window--2 hidden">
+        <div class="modal-window__close-button close-button--2">
+          <span class="close-button__line line--1">&nbsp;</span>
+          <span class="close-button__line line--2">&nbsp;</span>
+        </div>
+        <div class="modal-window__content">
+          <h1 class="modal-window__title heading--secondary highlighted-text">
+            Customized Solutions
+          </h1>
+          <p class="modal-window__description paragraph--secondary">
+            We focus on understanding the unique needs of each client and
+            provide tailored solutions that align with the specific business
+            goals and challenges. This personalized approach ensures that the IT
+            strategies and implementations are effective and relevant
+          </p>
+        </div>
+      </div>
+      <div class="modal-window modal-window--3 hidden">
+        <div class="modal-window__close-button close-button--2">
+          <span class="close-button__line line--1">&nbsp;</span>
+          <span class="close-button__line line--2">&nbsp;</span>
+        </div>
+        <div class="modal-window__content">
+          <h1 class="modal-window__title heading--secondary highlighted-text">
+            Innovative Technology
+          </h1>
+          <p class="modal-window__description paragraph--secondary">
+            We stays at the forefront of technological advancements, integrating
+            the latest innovations into our solutions. Our commitment to
+            innovation helps clients stay competitive and leverage cutting-edge
+            technologies to improve operations and drive growth
+          </p>
+        </div>
+      </div>
+      <div class="modal-window modal-window--4 hidden">
+        <div class="modal-window__close-button close-button--2">
+          <span class="close-button__line line--1">&nbsp;</span>
+          <span class="close-button__line line--2">&nbsp;</span>
+        </div>
+        <div class="modal-window__content">
+          <h1 class="modal-window__title heading--secondary highlighted-text">
+            Comprehensive Services
+          </h1>
+          <p class="modal-window__description paragraph--secondary">
+            We offer a wide range of services, from IT strategy consulting and
+            digital transformation to managed IT services and support, We can be
+            a one-stop shop for all IT needs. This comprehensive service offer
+            to ensure seamless integration and coordination across various IT
+            functions.
+          </p>
+        </div>
+      </div>
+      <div class="modal-window modal-window--5 hidden">
+        <div class="modal-window__close-button close-button--2">
+          <span class="close-button__line line--1">&nbsp;</span>
+          <span class="close-button__line line--2">&nbsp;</span>
+        </div>
+        <div class="modal-window__content">
+          <h1 class="modal-window__title heading--secondary highlighted-text">
+            Proven Track Record
+          </h1>
+          <p class="modal-window__description paragraph--secondary">
+            With a history of successful projects and satisfied clients, We have
+            demonstrated our ability to deliver results. Case studies and
+            testimonials can showcase our capability to solve real-world
+            problems and provide tangible benefits to our clients.
+          </p>
+        </div>
+      </div>
+      <div class="modal-window modal-window--6 hidden">
+        <div class="modal-window__close-button close-button--2">
+          <span class="close-button__line line--1">&nbsp;</span>
+          <span class="close-button__line line--2">&nbsp;</span>
+        </div>
+        <div class="modal-window__content">
+          <h1 class="modal-window__title heading--secondary highlighted-text">
+            Client-Centric Approach
+          </h1>
+          <p class="modal-window__description paragraph--secondary">
+            We prioritize client satisfaction, maintaining open communication
+            and transparency throughout the project lifecycle. Our commitment to
+            building long-term relationships and providing ongoing support
+            ensures that clients feel valued and supported
+          </p>
+        </div>
+      </div>
+      <div class="modal-window modal-window--7 newsletter hidden">
+        <div class="modal-window__close-button close-button--2">
+          <span class="close-button__line line--1">&nbsp;</span>
+          <span class="close-button__line line--2">&nbsp;</span>
+        </div>
+        <div class="modal-window__content">
+          <div class="content-field">
+            <h2 class="modal-window__title heading--secondary">
+              Receive tips and tricks
+            </h2>
+            <div class="mytoggle mytoggle--1"></div>
+          </div>
+          <div class="content-field">
+            <h2 class="modal-window__title heading--secondary">
+              Receive offers
+            </h2>
+            <div class="mytoggle mytoggle--2"></div>
+          </div>
+          <div class="content-field">
+            <h2 class="modal-window__title heading--secondary">
+              Receive updates
+            </h2>
+            <div class="mytoggle mytoggle--3"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

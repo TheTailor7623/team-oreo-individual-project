@@ -1,0 +1,55 @@
+.form {
+  padding: 9.6rem;
+  background: linear-gradient(
+    to bottom right,
+    $primary-tint1,
+    $primary-shade6 65%
+  );
+  border-radius: 8px;
+  margin: 0 0 9.6rem 0;
+
+  @include respond(mob) {
+    padding: 3.2rem;
+  }
+
+  .form__section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    margin: 0 0 2.4rem 0;
+
+    &.field--3 {
+      margin: 0 0 4.8rem 0;
+    }
+
+    .form__label {
+      font-size: 2rem;
+      color: $primary-tint6;
+    }
+
+    .form__field {
+      padding: 1.2rem;
+      border-radius: 8px;
+      font-size: 1.8rem;
+
+      font-family: inherit;
+      color: $primary-shade6;
+      border: none;
+      background-color: $grey-tint1;
+      width: 100%;
+
+      &:focus:invalid {
+        box-shadow: 0 0 0 0.8rem $red2;
+      }
+
+      &:focus:valid {
+        box-shadow: 0 0 0 0.8rem $green2;
+      }
+    }
+  }
+  // .btn {
+  //   width: 100%;
+  //   border: none;
+  //   background-color: transparent;
+  // }
+}
